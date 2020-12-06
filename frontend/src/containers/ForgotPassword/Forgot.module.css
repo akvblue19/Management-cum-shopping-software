@@ -1,0 +1,25 @@
+.Link{
+    margin: 150px auto;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0px 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Link Input{
+    margin-top: 30px;
+}
+
+.Spin{
+    text-align: center;
+}
+.Data{
+    color: red;
+}
+@media(min-width: 600px){
+    .Link{
+        width: 500px;
+    }
+}

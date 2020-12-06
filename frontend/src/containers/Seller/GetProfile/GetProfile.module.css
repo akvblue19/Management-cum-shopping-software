@@ -1,0 +1,28 @@
+.Seller{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 330px;
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0px 2px 3px #ccc;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.Dp img{
+    width: 80%;
+    height: 350px;
+}
+
+@media(max-width: 600px){
+    .Seller{
+        text-align: center;
+        margin-left: 120px;
+    } 
+
+    .Seller img{
+        width: 90%;
+    } 
+}

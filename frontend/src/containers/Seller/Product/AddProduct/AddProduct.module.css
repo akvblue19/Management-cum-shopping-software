@@ -1,0 +1,30 @@
+.Product{
+    margin: 150px auto;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0px 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Product Input{
+    margin-top: 30px;
+}
+
+.Product textarea{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Green{
+    color: green;
+}
+.RED{
+    color: red;
+}
+@media(min-width: 600px){
+    .Product{
+        width: 500px;
+    }
+}

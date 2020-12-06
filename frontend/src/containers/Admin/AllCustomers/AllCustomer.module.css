@@ -1,0 +1,61 @@
+.AllCustomer{
+    margin-left: 100px;
+}
+
+table{
+    width: 90%;
+    text-align: center;
+}
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+thead td{
+    font-weight: bold;
+}
+
+table, th, tr, td{
+    margin: 10px;
+    
+}
+th{
+    text-align: center;
+}
+
+
+.Set{
+    text-align: center;
+}
+
+.Spin{
+    margin-left: 600px;
+}
+
+@media(max-width: 950px){
+
+    .Spin{
+        margin-left: 500px;
+    }
+}
+
+@media(max-width: 500px){
+    .AllCustomer{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Set p{
+        margin-left: 250px;
+    }
+
+    table{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .Spin{
+        margin-left: 350px;
+    }
+    
+}

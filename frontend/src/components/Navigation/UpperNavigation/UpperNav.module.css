@@ -1,0 +1,11 @@
+.UpperNav{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-left: 10px;
+    align-items: center;
+    height: 100%;
+}
+

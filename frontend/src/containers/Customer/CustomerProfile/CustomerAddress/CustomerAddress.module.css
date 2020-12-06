@@ -1,0 +1,17 @@
+.CustomerAddress ul {
+    list-style: none;
+    border-top: 1px solid black;
+    /* width: 50%; */
+    align-items: center;
+    padding-top: 10px;
+}
+
+.CustomerAddress ul li{
+    padding-top: 10px;
+}
+
+.Head{
+    margin-top: 60px;
+    color: green;
+
+}

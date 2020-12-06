@@ -1,0 +1,10 @@
+
+.Dp img{
+    width: 80%;
+    height: 350px;
+}
+@media(max-width: 600px){
+    /* .Profile img{
+        width: 100px;   
+    }  */
+}

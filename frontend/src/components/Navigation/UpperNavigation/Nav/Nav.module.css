@@ -1,0 +1,27 @@
+.NavBars{
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+}
+    
+.NavBars a{
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+}
+
+
+.NavBars a:hover,
+.NavBars a:active,
+.NavBars a.active{
+    background-color: #78244c;
+    border-bottom: 4px solid green;
+    color: whitesmoke;
+}

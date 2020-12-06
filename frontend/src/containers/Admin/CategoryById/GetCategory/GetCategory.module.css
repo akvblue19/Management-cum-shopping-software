@@ -1,0 +1,57 @@
+.Data{
+    margin-left: 100px;
+}
+
+
+table{
+    text-align: center;
+}
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+table, th, tr, td{
+    margin: 10px;
+    
+}
+th{
+    text-align: center;
+}
+
+
+
+.Set p{
+    text-align: center;
+}
+
+.Spin{
+   text-align: center;
+}
+
+@media(max-width: 950px){
+
+    .Spin{
+        margin-left: 500px;
+    }
+}
+
+@media(max-width: 500px){
+    .Data{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Set p{
+        text-align: center;
+    }
+
+    table{
+        text-align: center;
+    }
+    
+    .Spin{
+        margin-left: 350px;
+    }
+    
+}

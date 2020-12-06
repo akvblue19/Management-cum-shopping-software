@@ -1,0 +1,78 @@
+.CategoryId{
+    margin-left: 400px;
+}
+
+.Form{
+    margin: 50px auto;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0px 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Form Input{
+    margin-top: 30px;
+}
+
+@media(min-width: 600px){
+    .Form{
+        width: 500px;
+    }
+}
+
+
+table{
+    text-align: center;
+}
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+table, th, tr, td{
+    margin: 10px;
+    
+}
+th{
+    text-align: center;
+}
+
+.Sets{
+    margin-left: 100px;
+}
+
+
+.Data p{
+    text-align: center;
+
+}
+
+.Error{
+    color: red;
+}
+
+.Center{
+    text-align: center;
+}
+
+
+@media(max-width: 500px){
+    .CategoryId{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Data p{
+        margin-left: 250px;
+        text-align: center;
+    }
+
+    table{
+        text-align: center;
+    }
+    
+   
+    
+}

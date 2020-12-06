@@ -1,0 +1,14 @@
+.Search{
+    display: flex;
+    color: aliceblue;
+}
+
+
+
+.Button Button{
+    margin: 0px;
+    height: 35px;
+    width: 40px;
+    background-color: goldenrod;
+    border-radius: 0px 5px 5px 0px;
+}
