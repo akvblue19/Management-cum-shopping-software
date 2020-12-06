@@ -1,0 +1,1 @@
+# Management-cum-shopping-software
