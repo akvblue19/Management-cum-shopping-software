@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService {
                 confirmToken.setGeneratedDate(new Date());
                 verificationTokenRepository.save(confirmToken);
                 emailService.sendEmail("RE-SET PASSWORD TOKEN", "To reset your password, please click here : "
-                        + "http://13.68.230.39:3000/reset/password?token=" + token, user.getEmail());
+                        + "http://127.0.0.1:3000/reset/password?token=" + token, user.getEmail());
             }
         }
         return "message sent check the mail";

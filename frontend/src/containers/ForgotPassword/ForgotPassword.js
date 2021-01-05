@@ -49,7 +49,7 @@ class ForgotPassword extends Component{
         this.setState({isLoading:true})
         axios({
             method: 'Post',
-            url: 'http://13.68.230.39:8080/e-commerce/user/forgot-password',
+            url: 'http://127.0.0.1:8080/e-commerce/user/forgot-password',
             params:{
                 email: this.state.controls.email.value,
             },

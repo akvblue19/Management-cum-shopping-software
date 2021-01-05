@@ -58,7 +58,7 @@ export const auth = (email,password) => {
         };
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/oauth/token',
+            url: 'http://127.0.0.1:8080/oauth/token',
             data:qs.stringify(authData) ,
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             })
@@ -66,7 +66,7 @@ export const auth = (email,password) => {
             response => {
                 axios({
                     method: 'get',
-                    url: 'http://13.68.230.39:8080/e-commerce/register/getRole',
+                    url: 'http://127.0.0.1:8080/e-commerce/register/getRole',
                     params:{
                         email: email
                     },

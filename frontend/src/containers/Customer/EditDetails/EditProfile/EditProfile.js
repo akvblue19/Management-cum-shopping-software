@@ -131,7 +131,7 @@ class EditProfile extends Component{
         loading: true})
         axios({
             method: 'Put',
-            url: 'http://13.68.230.39:8080/e-commerce/customer/home/update-profile',
+            url: 'http://127.0.0.1:8080/e-commerce/customer/home/update-profile',
             data:{
             firstName: this.state.controls.firstName.value,
             lastName:  this.state.controls.lastName.value,

@@ -25,7 +25,7 @@ export const seller =  (token) => {
         dispatch(sellerFetchStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/sellers/0',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/sellers/0',
             headers: {
                     'Authorization' : `Bearer ${token}`
                 }
@@ -70,7 +70,7 @@ export const customer =  (token) => {
         dispatch(customerFetchStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/customers/0',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/customers/0',
             headers: {
                     'Authorization' : `Bearer ${token}`
                 }

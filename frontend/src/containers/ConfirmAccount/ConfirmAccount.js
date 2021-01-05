@@ -10,7 +10,7 @@ class ConfirmAccount extends Component{
         let token = params.get('token')
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/register/confirm-account',
+            url: 'http://127.0.0.1:8080/e-commerce/register/confirm-account',
             params:{
                 token: token
             },

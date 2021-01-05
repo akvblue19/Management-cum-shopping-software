@@ -37,7 +37,7 @@ export const signup = (email,password, confirmPassword,firstName,middleName,prof
         };
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/e-commerce/register/register-customer',
+            url: 'http://127.0.0.1:8080/e-commerce/register/register-customer',
             data: signupData,
             headers: {
                 'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ export const sellerSignup = (firstName,middleName,lastName,companyContact,email,
         dispatch(signupStart());
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/e-commerce/register/register-seller',
+            url: 'http://127.0.0.1:8080/e-commerce/register/register-seller',
             data: {
                 email: email,
                 firstName: firstName,

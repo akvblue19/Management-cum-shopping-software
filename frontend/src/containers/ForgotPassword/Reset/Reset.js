@@ -68,7 +68,7 @@ class Reset extends Component{
         let token = params.get('token')
         axios({
             method: 'Put',
-            url: 'http://13.68.230.39:8080/e-commerce/user/reset-password',
+            url: 'http://127.0.0.1:8080/e-commerce/user/reset-password',
             params:{
                 password: this.state.controls.password.value,
                 confirmPassword: this.state.controls.confirmPassword.value,

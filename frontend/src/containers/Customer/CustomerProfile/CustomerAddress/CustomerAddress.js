@@ -20,7 +20,7 @@ class CustomerAddress extends Component {
     deleteHandler = addressId => {
         axios({
             method: 'Delete',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/delete-address/${addressId}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/delete-address/${addressId}`,
             headers: {
                     'Authorization' : `Bearer ${this.props.token}`
                 }

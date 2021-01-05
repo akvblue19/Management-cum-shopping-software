@@ -24,7 +24,7 @@ class AllSellers extends Component{
         })
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/seller-activate/${sellerId}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/seller-activate/${sellerId}`,
             headers: {
                     'Authorization' : `Bearer ${this.props.token}`
                 }
@@ -47,7 +47,7 @@ class AllSellers extends Component{
         })
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/seller-de-activate/${sellerId}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/seller-de-activate/${sellerId}`,
             headers: {
                     'Authorization' : `Bearer ${this.props.token}`
                 }

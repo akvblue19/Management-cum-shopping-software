@@ -25,7 +25,7 @@ export const applyLogout = (token) => {
         dispatch(logoutStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/Logout/doLogout',
+            url: 'http://127.0.0.1:8080/e-commerce/Logout/doLogout',
             headers: {
                 'Authorization': 'Bearer '+ token
             }

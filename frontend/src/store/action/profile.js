@@ -27,7 +27,7 @@ export const fetch = (token) => {
         dispatch(fetchStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/customer/home/user-profile',
+            url: 'http://127.0.0.1:8080/e-commerce/customer/home/user-profile',
             headers: {'Content-Type': 'application/x-www-form-urlencoded',
                     'Authorization' : `Bearer ${token}`
                 }
@@ -69,7 +69,7 @@ export const addressFetch = (token) => {
         dispatch(addressFetchStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/customer/home/get-address',
+            url: 'http://127.0.0.1:8080/e-commerce/customer/home/get-address',
             headers: {
                     'Authorization' : `Bearer ${token}`
                 }
@@ -111,7 +111,7 @@ export const sellerFetch = (token) => {
         dispatch(sellerProfileStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/seller/home/user-profile',
+            url: 'http://127.0.0.1:8080/e-commerce/seller/home/user-profile',
             headers: {'Content-Type': 'application/x-www-form-urlencoded',
                     'Authorization' : `Bearer ${token}`
                 }

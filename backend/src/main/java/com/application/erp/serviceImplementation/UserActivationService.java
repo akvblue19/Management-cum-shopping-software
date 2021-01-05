@@ -83,7 +83,7 @@ public class UserActivationService {
             token1.setGeneratedDate(new Date());
             verificationTokenRepository.save(token1);
             emailService.sendEmail("RE-ACCOUNT ACTIVATE TOKEN","To confirm your account, please click here : "
-                    +"http://13.68.230.39:8080/e-commerce/register/confirm-account?token="+newToken,email);
+                    +"http://127.0.0.1:8080/e-commerce/register/confirm-account?token="+newToken,email);
             flag = true;
         }
         return flag;
@@ -110,7 +110,7 @@ public class UserActivationService {
             token.setGeneratedDate(new Date());
             verificationTokenRepository.save(token);
             emailService.sendEmail("RE-ACCOUNT ACTIVATE TOKEN","To confirm your account, please click here : "
-                    +"http://13.68.230.39:3000/confirm-account?token="+newToken,email);
+                    +"http://127.0.0.1:3000/confirm-account?token="+newToken,email);
             return "Successful";
         }
         return "Successful";

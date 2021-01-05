@@ -28,7 +28,7 @@ export const update = (fName,lName,companyContact,companyName,gst,token) => {
         dispatch(updateStart())
         axios({
             method: 'put',
-            url: 'http://13.68.230.39:8080/e-commerce/seller/home/update-profile',
+            url: 'http://127.0.0.1:8080/e-commerce/seller/home/update-profile',
             data:{
                 firstName: fName,
                 lastName: lName,
@@ -56,7 +56,7 @@ export const updatePassword = (token,label,password,confirmPassword) => {
         dispatch(updateStart())
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/${label}/home/reset-password`,
+            url: `http://127.0.0.1:8080/e-commerce/${label}/home/reset-password`,
             params:{
                 password: password,
                 confirmPassword: confirmPassword
@@ -78,7 +78,7 @@ export const updateAddress = (id,city,state, country, address, zipcode, label, t
         dispatch(updateStart())
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/${user}/home/update-address/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/${user}/home/update-address/${id}`,
             data:{
                 state: state,
                 city: city,
@@ -104,7 +104,7 @@ export const updateProduct = (token, id, name, description) => {
         dispatch(updateStart())
         axios({
             method: 'put',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/update-product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/update-product/${id}`,
             data:{
                 name: name,
                 description: description,

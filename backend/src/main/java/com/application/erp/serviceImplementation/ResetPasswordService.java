@@ -90,7 +90,7 @@ public class ResetPasswordService {
                 token1.setGeneratedDate(new Date());
                 verificationTokenRepository.save(token1);
                 emailService.sendEmail("NEW RE-SET PASSWORD TOKEN","To reset password, please click here : "
-                        +"http://13.68.230.39:8080/e-commerce/user/reset-password?token="+newToken,email);
+                        +"http://127.0.0.1:8080/e-commerce/user/reset-password?token="+newToken,email);
                 flag = true;
             }
             return flag;

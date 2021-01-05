@@ -120,7 +120,7 @@ class SetAddress extends Component {
         })
         axios({
             method: 'Post',
-            url: 'http://13.68.230.39:8080/e-commerce/customer/home/save-address',
+            url: 'http://127.0.0.1:8080/e-commerce/customer/home/save-address',
             data:{
                 state: this.state.controls.state.value,
                 city: this.state.controls.city.value,

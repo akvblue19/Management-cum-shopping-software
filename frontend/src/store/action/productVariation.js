@@ -26,7 +26,7 @@ export const productVariation =  (id, token) => {
         dispatch(variationFetchStart())
         axios({
             method: 'Get',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/product-variation/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/product-variation/${id}`,
             headers: {
                     'Authorization' : `Bearer ${token}`
                 }
@@ -68,7 +68,7 @@ export const similar =  (id, token) => {
         dispatch(similarProductStart())
         axios({
             method: 'Get',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/similar-product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/similar-product/${id}`,
             headers: {
                     'Authorization' : `Bearer ${token}`
                 }

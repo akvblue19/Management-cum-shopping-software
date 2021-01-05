@@ -120,7 +120,7 @@ class EditAddress extends Component {
         })
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/update-address/${addressId}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/update-address/${addressId}`,
             data:{
                 state: this.state.controls.state.value,
                 city: this.state.controls.city.value,

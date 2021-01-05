@@ -24,7 +24,7 @@ export const metadataField =  (token, data) => {
         dispatch(metadataPostStart())
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/add-metadata-field',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/add-metadata-field',
             data:{
                 name: data
             } ,
@@ -66,7 +66,7 @@ export const metadataValue =  (token, id, fieldId, value) => {
         dispatch(metadataValuePostStart())
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/add-category-metadata-field-value',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/add-category-metadata-field-value',
             data:{
                 categoryId: id,
                 categoryMetadataFieldId: fieldId,
@@ -111,7 +111,7 @@ export const metadataFetch =  (token) => {
         dispatch(metadataFetchStart())
         axios({
             method: 'Get',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/get-metadata-fields/0',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/get-metadata-fields/0',
             headers: {
                 'Authorization': 'Bearer' + token
                 }
@@ -138,7 +138,7 @@ export const updateMetadataValue =  (token, id, fieldId, value) => {
         dispatch(metadataValuePostStart())
         axios({
             method: 'put',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/update-category-metadata-field-value',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/update-category-metadata-field-value',
             data:{
                 categoryId: id,
                 categoryMetadataFieldId: fieldId,

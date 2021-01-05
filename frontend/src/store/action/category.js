@@ -25,7 +25,7 @@ export const category =  (token, id, name) => {
         dispatch(categoryPostStart())
         axios({
             method: 'post',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/add-category',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/add-category',
             data:{
                 parentId: id,
                 name: name
@@ -68,7 +68,7 @@ export const categoryFetch =  (token,label) => {
         dispatch(categoryFetchStart())
         axios({
             method: 'get',
-            url: `http://13.68.230.39:8080/e-commerce/${label}/home/all-category`,
+            url: `http://127.0.0.1:8080/e-commerce/${label}/home/all-category`,
             headers: {
                 'Authorization': 'Bearer' + token
                 }
@@ -112,7 +112,7 @@ export const categoryFetchById =  (token,id) => {
         dispatch(categoryFetchByIdStart())
         axios({
             method: 'get',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/get-category/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/get-category/${id}`,
             headers: {
                 'Authorization': 'Bearer' + token
                 }
@@ -157,7 +157,7 @@ export const categoryUpdate =  (token,id, name) => {
         dispatch(categoryUpdateStart())
         axios({
             method: 'Put',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/update-category/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/update-category/${id}`,
             params:{
                 name: name
             } ,
@@ -179,7 +179,7 @@ export const categoryList = (token) => {
         dispatch(categoryFetchStart())
         axios({
             method: 'Get',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/get-category`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/get-category`,
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + token
@@ -225,7 +225,7 @@ export const categoryProduct = (token,id) => {
         dispatch(categoryDetailFetchStart())
         axios({
             method: 'Get',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/product-by-category/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/product-by-category/${id}`,
             headers: {
                 'Authorization': 'Bearer ' + token
                 }
@@ -270,7 +270,7 @@ export const subCategoryList = (token,id) => {
         dispatch(subFetchStart())
         axios({
             method: 'Get',
-            url: `http://13.68.230.39:8080/e-commerce/customer/home/get-child-category/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/customer/home/get-child-category/${id}`,
             headers: {
                 'Authorization': 'Bearer ' + token
                 }

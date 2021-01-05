@@ -23,7 +23,7 @@ export const fetchFail = () => {
 export const product =  () => {
     return dispatch => {
         dispatch(fetchStart())
-        axios.get('http://13.68.230.39:8080/e-commerce/register/home/variations')
+        axios.get('http://127.0.0.1:8080/e-commerce/register/home/variations')
         .then(response => {
             const fetcedProducts = [];
             for( let key in response.data){
@@ -83,7 +83,7 @@ export const sellerProductFetch =  (token) => {
         dispatch(sellerfetchStart())
         axios({
             method: 'get',
-            url: 'http://13.68.230.39:8080/e-commerce/seller/home/all-products',
+            url: 'http://127.0.0.1:8080/e-commerce/seller/home/all-products',
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -127,7 +127,7 @@ export const deleteProduct =  (token,id) => {
         dispatch(deleteProductStart())
         axios({
             method: 'delete',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/product/${id}`,
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -145,7 +145,7 @@ export const viewProduct =  (token,id) => {
         dispatch(datafetchStart())
         axios({
             method: 'get',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/all-product-variation/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/all-product-variation/${id}`,
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -171,7 +171,7 @@ export const productfetch =  (token) => {
         dispatch(adminfetchStart())
         axios({
             method: 'get',
-            url: 'http://13.68.230.39:8080/e-commerce/admin/home/all-products',
+            url: 'http://127.0.0.1:8080/e-commerce/admin/home/all-products',
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -215,7 +215,7 @@ export const productActivate =  (token,id) => {
         dispatch(activateStart())
         axios({
             method: 'put',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/activate-product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/activate-product/${id}`,
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -233,7 +233,7 @@ export const productDeactivate =  (token,id) => {
         dispatch(activateStart())
         axios({
             method: 'put',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/de-activate-product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/de-activate-product/${id}`,
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -270,7 +270,7 @@ export const productDetail =  (token,id) => {
         dispatch(datafetchStart())
         axios({
             method: 'get',
-            url: `http://13.68.230.39:8080/e-commerce/admin/home/product/${id}`,
+            url: `http://127.0.0.1:8080/e-commerce/admin/home/product/${id}`,
             headers: {
                 'Authorization': 'Bearer '+ token
             }
@@ -313,7 +313,7 @@ export const productPost =  (name,brand,description,categoryId, token) => {
         dispatch(productPostStart())
         axios({
             method: 'post',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/add-product`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/add-product`,
             data:{
                 name: name,
                 brand: brand,
@@ -337,7 +337,7 @@ export const productVariationPost =  (id, quantity, price,image,field,value, tok
         dispatch(productPostStart())
         axios({
             method: 'post',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/add-product-variation`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/add-product-variation`,
             data:{
                 productId: id,
                 quantityAvailable: quantity,
@@ -364,7 +364,7 @@ export const productVariationUpdate =  (variationId,id, quantity, price, image, 
         dispatch(productPostStart())
         axios({
             method: 'put',
-            url: `http://13.68.230.39:8080/e-commerce/seller/home/update-product-variation/${variationId}`,
+            url: `http://127.0.0.1:8080/e-commerce/seller/home/update-product-variation/${variationId}`,
             data:{
                 productId: id,
                 quantityAvailable: quantity,

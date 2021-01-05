@@ -78,7 +78,7 @@ public class CustomerServiceImpl implements CustomerService {
             verificationTokenRepository.save(confirmToken);
 
             emailService.sendEmail("ACCOUNT ACTIVATE TOKEN", "To confirm your account, please click here : "
-                    + "http://13.68.230.39:3000/confirm-account?token=" + token, customer.getEmail());
+                    + "http://127.0.0.1:3000/confirm-account?token=" + token, customer.getEmail());
 
             return "registered";
         } else {
